@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    
+    <link rel="stylesheet" type="text/css" href="s46.css">
+</head>
+<body>
+    <style>
+        header {
+            background-color: #a3acf8;
+            color: black;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f7ce68;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .apply-form {
+            animation: fadeIn 1s ease;
+        }
+    </style>
+    <div class="container">
+        <header style="position: relative;top:-30px;width: 1440px;">
+            <nav style="position: relative;width: 1200px">
+                <div class="logo"style="position: relative;top: 0;left: 8px">
+                    <i class="fas fa-home"></i> Help</div>
+                <ul>
+                    <li><a href="../36 hr home/i36.php"style="position: relative;left: 136px;top:0">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+                Help
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+            
+            <form action="hr help.php" method="POST" enctype="multipart/form-data">
+                <div class="field">
+                    <input  for="name" type="text" name="name" id="title" placeholder="Title" required>
+                </div>
+
+                <div class="field">
+                    <input for="email" type="email" name="email" id="email"  placeholder="Email" required>
+                </div>
+
+                <div class="field">
+                  <textarea for="issue" type="issue" name="issue" id="issue"  placeholder="Issue" required></textarea>
+              </div>
+
+              <div class="field">
+                <input type="file" name="pdf" id="pdf"  placeholder="" required>
+            </div>
+
+              
+
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Request">
+                </div>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+        </form>
+        
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+    
+            // Form data
+            var nameInput = document.getElementById("name");
+            var empIdInput = document.getElementById("employeeId");
+            var dateInput = document.getElementById("date");
+    
+            var name = nameInput.value;
+            var empId = empIdInput.value;
+            var date = dateInput.value;
+    
+            // Validation for the name, employeeId, and date fields
+            if (!name || !employeeId || !cpassword || !npassword || !rpassword) {
+                showErrorMsg("Please fill in all fields.");
+                return false;
+            }
+    
+            // Submit form (Replace with your own code for form submission)
+            // Here, we are just showing a success message
+            showSuccessMsg("Password change successfully");
+    
+            return true;
+        }
+    
+        function showSuccessMsg(message) {
+            var successMsg = document.getElementById("successMsg");
+            successMsg.style.display = "block";
+            successMsg.textContent = message;
+    
+            var errorMsg = document.getElementById("errorMsg");
+            errorMsg.style.display = "none";
+        }
+    
+        function showErrorMsg(message) {
+            var successMsg = document.getElementById("successMsg");
+            successMsg.style.display = "none";
+    
+            var errorMsg = document.getElementById("errorMsg");
+            errorMsg.style.display = "block";
+            errorMsg.textContent = message;
+        }
+    
+    </script>

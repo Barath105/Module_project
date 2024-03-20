@@ -1,0 +1,100 @@
+.emp-p-view {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.emp-p-view .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1024px;
+}
+
+.emp-p-view .overlap-group {
+  position: relative;
+  height: 1024px;
+}
+
+.emp-p-view .frame {
+  position: absolute;
+  width: 1440px;
+  height: 956px;
+  top: 68px;
+  left: 0;
+  background-color: #eaecfd;
+}
+
+.emp-p-view .div {
+  position: absolute;
+  width: 274px;
+  height: 31px;
+  top: 92px;
+  left: 61px;
+}
+
+.emp-p-view .text-wrapper {
+  position: absolute;
+  top: 1px;
+  left: 84px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-p-view .vector {
+  position: absolute;
+  width: 27px;
+  height: 31px;
+  top: 0;
+  left: 0;
+}
+
+.emp-p-view .frame-2 {
+  position: absolute;
+  width: 273px;
+  height: 38px;
+  top: 167px;
+  left: 61px;
+}
+
+.emp-p-view .text-wrapper-2 {
+  position: absolute;
+  top: 2px;
+  left: 84px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-p-view .img {
+  position: absolute;
+  width: 27px;
+  height: 37px;
+  top: 1px;
+  left: 0;
+}
+
+.emp-p-view .frame-3 {
+  position: absolute;
+  width: 157px;
+  height: 27px;
+  top: 249px;
+  left: 61px;
+}
+
+.emp-p-view .vector-2 {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  top: 4px;
+  left: 0;
+}
+

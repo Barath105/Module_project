@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>View User</h1>
+
+  <!-- Search Box -->
+  <!-- <label for="search">Search by User ID:</label>
+  <input type="text" id="search" placeholder="Enter User ID">
+  <button onclick="searchUser()">Search</button> -->
+
+  <div style="margin-top: 20px;"></div>
+
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>User ID</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th>Role</th>
+        <th>Organization</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>1101</td>
+        <td>22</td>
+        <td>Male</td>
+        <td>abcd@gmail.com</td>
+        <td>20/10/2000</td>
+        <td>123123412341234</td>
+        <td>ECR, Chennai</td>
+        <td>Developer</td>
+        <td>SSE Soft Tech</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function searchUser() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("data-table");
+      tr = table.getElementsByTagName("tr");
+
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1]; // Assuming User ID is in the second column
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+    window.onload = function() {
+      var dataRows = document.querySelectorAll("#data-table tbody tr");
+
+      for (var i = 0; i < dataRows.length; i++) {
+        dataRows[i].addEventListener("click", function() {
+          console.log("Data row clicked");
+        });
+      }
+    }
+  </script>
+</body>
+</html>

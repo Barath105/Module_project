@@ -1,0 +1,334 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        
+    <link rel="stylesheet" type="text/css" href="s52.css">
+</head>
+<body>
+    <style>
+        header {
+            background-color: #a3acf8;
+            color: black;
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f7ce68;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .apply-form {
+            animation: fadeIn 1s ease;
+        }
+        body {
+            overflow-x: hidden; /* Hide vertical scrollbar */
+        }
+        info-message {
+            font-size: 12px;
+        }
+    
+        .info-message {
+            font-size: 12px;
+        }
+    
+        textarea:hover + .info-message {
+            display: block;
+        }
+    
+        
+        
+        .tag {
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            color: #333;
+            display: inline-block;
+            font-size: 12px;
+            margin-bottom: 6px;
+            margin-right: 6px;
+            padding: 6px 10px;
+        }
+        
+        .tag .tag-close {
+            cursor: pointer;
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 6px;
+        }
+        
+        #tag-input {
+            border: none;
+            font-size: 12px;
+            margin-top: 6px;
+            outline: none;
+            width: 150px;
+        }
+
+        .employee-item {
+            display: inline-block;
+            background-color: #ddd;
+            padding: 5px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+
+        .employee-item .cancel-icon {
+            margin-left: 5px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .product_id {
+            font-weight: bold;
+        }
+
+        header {
+            background:linear-gradient(45deg, #a3acf8, #c9cef5);
+            color: black;
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        img {
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height:100vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: -200;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    background-image: linear-gradient(to right, #a3acf8, #a1a7dd);
+    /* Replace #ff8a00 and #da1b60 with your desired colors */
+    /* animation: footerAnimation 5s infinite; */
+  }
+  
+  .footer-content {
+    font-size: 14px;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+
+        
+    </style>
+
+
+    
+    <header style="position: relative;top: 0px;width:100%;left: 0px;height: 36px">
+        <nav style="position: relative;width: 1200px">
+            <div class="logo" style="position: relative;top: -6px;left: 128px">
+                
+                <i class="fas fa-home"></i>Add user</div>
+                
+            <ul>
+                <li><a href="../36 hr home/i36.php" style="position: relative;left: 110px;top:-6px;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="EMP.png">
+        <!-- <div class="container" style="position: relative; top: 20px;"> -->
+            <section class="container">
+            
+                <form action="add.php" method="post" class="form">
+                <div class="column">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter full name" required />
+                </div>
+        
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="text" name="mail" placeholder="Enter email address" required />
+                </div>
+            </div>
+        
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input name="gender" value="Male" type="radio" checked />
+                            <label for="check-male">male</label>
+                        </div>
+                        <div class="gender">
+                            <input name="gender" value="Female" type="radio" id="check-female" />
+                            <label  for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input name="gender" value="Prefer not to say" type="radio" id="check-other"/>
+                            <label for="check-other">prefer not to say</label>
+                        </div>
+                    </div>
+                    </div>
+        
+                <div class="column">
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="number" name="phone" placeholder="Enter phone number" required />
+                    </div>
+                    <div class="input-box">
+                        <label>Birth Date</label>
+                        <input type="date" name="dob" placeholder="Enter birth date" required />
+                    </div>
+                </div>
+
+                <div class="column"> 
+                    <div class="input-box">
+                        <label>Set Password</label>
+                        <input type="password" name="password" placeholder="Set Password" required />
+                        </div>
+            
+                    <div class="input-box">
+                        <label>User ID</label>
+                        <input type="text" name="userid" placeholder="User ID" required />
+                    </div>
+            
+                    </div>
+
+                    <div class="column">
+                    
+                        <div class="input-box">
+                            <label>Basic Salary</label>
+                                <input type="number" name="salary" placeholder="Salary" required />
+                        </div>
+                
+                        <div class="input-box">
+                            <label>House Rent Allowance</label>
+                            <input type="number" name="house_rent" placeholder="House rent" required />
+                        </div>
+                
+                    </div>
+        
+                    <div class="column">
+                    
+                        <div class="input-box">
+                            <label for="role">Role</label>
+
+                            <select name="role" id="role" style="position:relative;height:50px;width:100%;outline:none;font-size:1rem;color:#707070;margin-top:8px;border:1px solid #ddd;border-radius:6px;padding:0 15px;" required>
+                                <option value="">Select Role</option>
+                                <option value="Web Developer">Web Developer</option>
+                                <option value="UI/UX">UI/UX</option>
+                                <option value="Software Testing">Software Testing</option>
+                                <option value="Backend">Backend</option>
+                            </select>
+                        </div>
+                        
+                        <script>
+                            // Hide the input field
+                            document.querySelector('input[name="role"]').style.display = 'none';
+                        </script>
+            
+                    <div class="input-box">
+                        <label>Organization</label>
+                    <input type="text" name="organization" placeholder="Organization" required />
+                    </div>
+            
+                    </div>
+
+
+                    
+
+        
+                <div class="input-box address">
+                    <label>Address</label>
+                    <input type="text" name="address" placeholder="Enter address" required />
+                    </div>
+                    
+                </div>
+                    <button>Add</button>
+                </form>
+            
+    
+            </section>
+
+
+        
+            <div style="margin-bottom:200px;"></div>
+            
+        
+</body>
+</html>

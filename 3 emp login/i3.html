@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="s3.css"> <!-- You can link your CSS file here -->
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/523c1d8307.js" crossorigin="anonymous"></script>
+  <style>
+    /* Add background image to the body */
+
+    /* Style the password input container */
+    .password-input {
+      position: relative;
+    }
+
+    /* Style the eye icon */
+    .password-toggle-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    /* Style the password input */
+    input[type="password"] {
+      padding-right: 40px; /* Add space for the icon */
+    }
+
+    /* Center the image */
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Add animation */
+     .emp-login-done {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    } 
+    
+  </style>
+</head>
+<body>
+  <div class="emp-login-done">
+    <div class="logo">
+      <!-- Add your logo image here -->
+      <img src="profile.png" alt="Sign In Logo" width="100" height="100">
+    </div>
+    <h1 class="employee-sign-in">Employee Sign In</h1>
+    <div class="login-frame">
+      <form action="login.php" method="POST">
+        <div class="input-frame">
+          <input type="text" name="userid" placeholder="User ID" required>
+          <!-- Password input field with toggle icon inside -->
+          <div class="password-input">
+            <input type="password" name="password" placeholder="Password" required>
+            <span class="password-toggle-icon" onclick="togglePassword(this)">
+              <!-- You can use an icon library like Font Awesome for the eye icon -->
+              <i class="fas fa-eye"></i>
+            </span>
+          </div>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    <div class="forgot-password"><a href="../5 password req/i5.html">
+      <p >Forgot Password?</p>
+    </div>
+  </div>
+  <script>
+    // JavaScript function to toggle the password visibility
+    function togglePassword(icon) {
+      const passwordInput = icon.parentElement.querySelector('input[name="password"]');
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        icon.querySelector("i").classList.remove("fa-eye");
+        icon.querySelector("i").classList.add("fa-eye-slash");
+      } else {
+        passwordInput.type = "password";
+        icon.querySelector("i").classList.remove("fa-eye-slash");
+        icon.querySelector("i").classList.add("fa-eye");
+      }
+    }
+  </script>
+</body>
+</html>

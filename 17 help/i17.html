@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="s17.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/523c1d8307.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    
+    
+</head>
+<body style="overflow-x:hidden;">
+    <style>
+        header {
+            background-color: #a3acf8;
+            color: black;
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f7ce68;
+        }
+    </style>
+    <title>Apply</title>
+    <header style="position: relative;top: -34px;width: 1380px;left: -12px;height: 68px;">
+        <nav style="position: relative;width: 1200px">
+            <div class="logo"style="position: relative;top: -2px;left: 8px">
+                <i class=""></i>Help</div>
+            <ul>
+                <li><a href="../4 emp home/i4.php"style="position: relative;left: 136px;top:-2px">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+            Help
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+            
+              <form id="leaveForm" class="apply-form" method="POST" action="http://localhost/PROJECT/17 help/help.php" enctype="multipart/form-data">
+
+                  <div class="field">
+                    <input type="text"  name="name" id="title" placeholder="Name" required>
+                  </div>
+          
+                  <div class="field">
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                  </div>
+          
+                  <div class="field">
+                    <input type="text" name="issue" id="issue"  placeholder="Issue" required>
+                  </div>
+          
+                  <div class="field">
+                    <input type="file" name="pdf" id="pdf"  placeholder="Upload file" required>
+                  </div>
+
+
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Request">
+                </div>
+                
+            </form>
+            
+            </div>
+        </div>
+    </div>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+        });
+    </script>
+
+
+    <script>
+        // JavaScript function to toggle the password visibility
+        function togglePassword(inputId) {
+        const passwordInput = document.getElementById(inputId);
+        const icon = passwordInput.parentElement.querySelector('.password-toggle-icon');
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            icon.querySelector("i").classList.remove("fa-eye");
+            icon.querySelector("i").classList.add("fa-eye-slash");
+        } else {
+            passwordInput.type = "password";
+            icon.querySelector("i").classList.remove("fa-eye-slash");
+            icon.querySelector("i").classList.add("fa-eye");
+        }
+        }
+    </script>
+
+
+    <script>
+            function submitForm(event) {
+                event.preventDefault();
+        
+                // Form data
+                var titleInput = document.getElementById("title");
+                var empIdInput = document.getElementById("empId");
+                var leaveTypeInput = document.getElementById("leaveType");
+                var startDateInput = document.getElementById("startDate");
+                var endDateInput = document.getElementById("endDate");
+                var reasonInput = document.getElementById("reason");
+                var fileInput = document.getElementById("file");
+        
+                var title = titleInput.value;
+                var empId = empIdInput.value;
+                var leaveType = leaveTypeInput.value;
+                var startDate = startDateInput.value;
+                var endDate = endDateInput.value;
+                var reason = reasonInput.value;
+                var file = fileInput.value;
+        
+                // Validation
+                if (!title || !empId || !leaveType || !startDate || !endDate || !reason) {
+                    showErrorMsg("Please fill in all fields.");
+                    return false;
+                }
+        
+                // Submit form (Replace with your own code for form submission)
+                // Here, we are just showing a success message
+                showSuccessMsg("Leave application submitted successfully.");
+        
+                return true;
+            }
+        
+            function showSuccessMsg(message) {
+                var successMsg = document.getElementById("successMsg");
+                successMsg.style.display = "block";
+                successMsg.textContent = message;
+        
+                var errorMsg = document.getElementById("errorMsg");
+                errorMsg.style.display = "none";
+            }
+        
+            function showErrorMsg(message) {
+                var successMsg = document.getElementById("successMsg");
+                successMsg.style.display = "none";
+        
+                var errorMsg = document.getElementById("errorMsg");
+                errorMsg.style.display = "block";
+                errorMsg.textContent = message;
+            }
+         // JavaScript to handle button clicks
+        document.getElementById("applyBtn").addEventListener("click", function () {
+            updateButtonColors(this);
+            // Your other actions for the "Apply" button here
+        });
+        
+        document.getElementById("pendingBtn").addEventListener("click", function () {
+            updateButtonColors(this);
+            // Your other actions for the "Pending" button here
+        });
+        
+        document.getElementById("historyBtn").addEventListener("click", function () {
+            updateButtonColors(this);
+            // Your other actions for the "History" button here
+        });
+
+        window.addEventListener("load", function () {
+            var applyBtn = document.getElementById("applyBtn");
+            applyBtn.style.backgroundColor = "skyblue";
+        });
+        
+        function updateButtonColors(clickedButton) {
+            const buttons = document.querySelectorAll(".button-group button");
+        
+            buttons.forEach(function (button) {
+                if (button === clickedButton) {
+                    button.style.backgroundColor = "skyblue"; // Change the background color of the clicked button to skyblue
+                } else {
+                    button.style.backgroundColor = ""; // Reset the background color of other buttons to default
+                }
+            });
+        }
+    </script>
+
+
+
+
+    <script>
+        const startDateInput = document.getElementById('startDate');
+        const endDateInput = document.getElementById('endDate');
+    
+        const startDatePicker = new Pikaday({
+            field: startDateInput,
+            format: 'YYYY-MM-DD',
+            yearRange: [1900, new Date().getFullYear()],
+            showYearDropdown: true,
+            placeholder: 'Start Date',
+        });
+    
+        const endDatePicker = new Pikaday({
+            field: endDateInput,
+            format: 'YYYY-MM-DD',
+            yearRange: [1900, new Date().getFullYear()],
+            showYearDropdown: true,
+            placeholder: 'End Date',
+        });
+    
+        startDateInput.addEventListener('input', function () {
+            // Custom validation or logic if needed
+        });
+    
+        endDateInput.addEventListener('input', function () {
+            // Custom validation or logic if needed
+        });
+    </script>
+
+    
+</body>
+</html>

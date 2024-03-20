@@ -1,0 +1,1228 @@
+.emp-home-page {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.emp-home-page .menu-wrapper {
+  width: 1356px;
+  height: 1000px;
+}
+
+.emp-home-page .menu {
+  position: relative;
+  height: 1000px;
+  background-color: #dcdffa;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.emp-home-page .frame {
+  position: absolute;
+  width: 1356px;
+  height: 96px;
+  top: 0;
+  left: 0;
+  background-color: #a3acf8;
+}
+
+.emp-home-page .vector {
+  position: absolute;
+  width: 26px;
+  height: 32px;
+  top: 32px;
+  left: 18px;
+}
+
+.emp-home-page .profile {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: -10px;
+  left:1078px;
+  object-fit: cover;
+}
+
+.emp-home-page .div {
+  position: absolute;
+  width: 68px;
+  height: 18px;
+  top: 39px;
+  left: 1189px;
+}
+
+.emp-home-page .text-wrapper {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .img {
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  top: 6px;
+  left: 82px;
+  cursor:pointer;
+}
+
+.emp-home-page .frame-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 99.7px;
+  position: absolute;
+  top: 184px;
+  left: 40px;
+}
+
+.emp-home-page .frame-wrapper {
+  position: relative;
+  width: 244.27px;
+  height: 164.51px;
+  border-radius: 24.93px;
+}
+
+.emp-home-page .frame-3 {
+  position: relative;
+  width: 244px;
+  height: 165px;
+  background-color: #a2abf7;
+  border-radius: 24.93px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #a3acf8;
+  background:linear-gradient(210deg, #dcdffa, #a3acf8);
+}
+
+
+.emp-home-page .text-wrapper-2 {
+  left: 42px;
+  position: absolute;
+  top: 20px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .text-wrapper-3 {
+  position: absolute;
+  top: 69px;
+  left: 99px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  justify-content:center;
+  text-align:center;
+}
+
+.emp-home-page .div-wrapper {
+  position: absolute;
+  width: 244px;
+  height: 40px;
+  top: 125px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.emp-home-page .text-wrapper-4 {
+  position: absolute;
+  top: 5px;
+  left: 81px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-5 {
+  left: 61px;
+  position: absolute;
+  top: 20px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .frame-4 {
+  position: absolute;
+  width: 209px;
+  height: 48px;
+  top: 67px;
+  left: 17px;
+}
+
+.emp-home-page .frame-5 {
+  position: absolute;
+  width: 70px;
+  height: 22px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .text-wrapper-6 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18.7px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .ellipse {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 6px;
+  left: 59px;
+  background-color: #19e715ad;
+  border-radius: 5.61px;
+}
+
+.emp-home-page .text-wrapper-7 {
+  top: 24px;
+  left: 19px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  font-size: 18.7px;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .frame-6 {
+  position: absolute;
+  width: 113px;
+  height: 22px;
+  top: 0;
+  left: 96px;
+}
+
+.emp-home-page .ellipse-2 {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 6px;
+  left: 102px;
+  background-color: #ffcb67;
+  border-radius: 5.61px;
+}
+
+.emp-home-page .text-wrapper-8 {
+  top: 24px;
+  left: 141px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  font-size: 18.7px;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-9 {
+  left: 54px;
+  position: absolute;
+  top: 20px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .frame-7 {
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  top: 61px;
+  left: 54px;
+}
+
+.emp-home-page .frame-8 {
+  position: relative;
+  height: 30px;
+}
+
+.emp-home-page .text-wrapper-10 {
+  position: absolute;
+  top: -1px;
+  left: 32px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .rupee {
+  position: absolute;
+  width: 29px;
+  height: 27px;
+  top: 1px;
+  left: -8px;
+  object-fit: cover;
+}
+
+.emp-home-page .text-wrapper-11 {
+  top: 61px;
+  left: 99px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  font-size: 24.9px;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-12 {
+  position: absolute;
+  top: 121px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .frame-9 {
+  position: absolute;
+  width: 1236px;
+  height: 422px;
+  top: 437px;
+  left: 60px;
+}
+
+.emp-home-page .group {
+  position: absolute;
+  width: 572px;
+  height: 421px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .overlap {
+  position: relative;
+  width: 570px;
+  height: 421px;
+  background-color: #a3acf8;
+  border-radius: 13.25px;
+  background:linear-gradient(to bottom, #dcdffa, #a3acf8)
+}
+
+.emp-home-page .nbcharts-columnchats {
+  position: absolute;
+  width: 533px;
+  height: 334px;
+  top: 65px;
+  left: 7px;
+}
+
+.emp-home-page .overlap-group {
+  position: absolute;
+  width: 498px;
+  height: 308px;
+  top: 4px;
+  left: 35px;
+}
+
+.emp-home-page .horizontal-lines {
+  position: absolute;
+  width: 496px;
+  height: 308px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .vertical-lines {
+  position: absolute;
+  width: 497px;
+  height: 308px;
+  top: 0;
+  left: 1px;
+}
+
+.emp-home-page .columns {
+  position: absolute;
+  width: 431px;
+  height: 278px;
+  top: 29px;
+  left: 28px;
+}
+
+.emp-home-page .element {
+  height: 126px;
+  top: 152px;
+  left: 0;
+  background-color: #0263ff;
+  position: absolute;
+  width: 23px;
+}
+
+.emp-home-page .element-2 {
+  height: 278px;
+  top: 0;
+  left: 102px;
+  background-color: #ff7723;
+  position: absolute;
+  width: 23px;
+}
+
+.emp-home-page .element-3 {
+  position: absolute;
+  width: 23px;
+  height: 231px;
+  top: 48px;
+  left: 306px;
+  background-color: #5128a7;
+}
+
+.emp-home-page .element-4 {
+  height: 201px;
+  top: 77px;
+  left: 204px;
+  background-color: #8e30ff;
+  position: absolute;
+  width: 23px;
+}
+
+.emp-home-page .element-5 {
+  position: absolute;
+  width: 23px;
+  height: 154px;
+  top: 125px;
+  left: 408px;
+  background-color: #4a96ff;
+}
+
+.emp-home-page .texts {
+  position: absolute;
+  width: 434px;
+  height: 168px;
+  top: 12px;
+  left: 31px;
+}
+
+.emp-home-page .text-wrapper-13 {
+  height: 16px;
+  top: 152px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-14 {
+  height: 16px;
+  top: 0;
+  left: 102px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-15 {
+  height: 16px;
+  top: 77px;
+  left: 203px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-16 {
+  height: 16px;
+  top: 46px;
+  left: 306px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-17 {
+  height: 16px;
+  top: 125px;
+  left: 408px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .left-text {
+  position: absolute;
+  width: 34px;
+  height: 318px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .text-wrapper-18 {
+  height: 16px;
+  top: 302px;
+  left: 16px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: right;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-19 {
+  height: 16px;
+  top: 227px;
+  left: 8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: right;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-20 {
+  height: 16px;
+  top: 151px;
+  left: 8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: right;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-21 {
+  height: 16px;
+  top: 76px;
+  left: 8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: right;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-22 {
+  height: 16px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-size: 13.6px;
+  text-align: right;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .bottom-text {
+  position: absolute;
+  width: 475px;
+  height: 16px;
+  top: 318px;
+  left: 46px;
+}
+
+.emp-home-page .text-wrapper-23 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.6px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .text-wrapper-24 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 203px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.6px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .text-wrapper-25 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 114px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.6px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .text-wrapper-26 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 305px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.6px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .text-wrapper-27 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 412px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13.6px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-home-page .text-wrapper-28 {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24.1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .overlap-wrapper {
+  position: absolute;
+  width: 570px;
+  height: 422px;
+  top: 0;
+  left: 666px;
+}
+
+.emp-home-page .overlap-2 {
+  position: relative;
+  width: 572px;
+  height: 422px;
+}
+
+.emp-home-page .overlap-group-wrapper {
+  position: absolute;
+  width: 572px;
+  height: 422px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .overlap-group-2 {
+  position: relative;
+  width: 570px;
+  height: 422px;
+  background-color: #a3acf8;
+  border-radius: 13.26px;
+  background:linear-gradient(to bottom, #dcdffa, #a3acf8)
+}
+
+.emp-home-page .text-wrapper-29 {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .pie-chart {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  top: 76px;
+  left: 15px;
+  overflow: hidden;
+  background-image: url(https://c.animaapp.com/lYNsExDT/img/28.svg);
+  background-size: 100% 100%;
+}
+
+.emp-home-page .element-wrapper {
+  position: relative;
+  height: 290px;
+  background-image: url(https://c.animaapp.com/lYNsExDT/img/3.svg);
+  background-size: 100% 100%;
+}
+
+.emp-home-page .element-6 {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .frame-10 {
+  position: absolute;
+  width: 213px;
+  height: 40px;
+  top: 191px;
+  left: 325px;
+}
+
+.emp-home-page .frame-11 {
+  position: absolute;
+  width: 213px;
+  height: 17px;
+  top: 0;
+  left: 0;
+}
+
+.emp-home-page .group-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: -8px;
+  background-color: #30beb6;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.emp-home-page .group-3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: 83px;
+  background-color: #ff7f74;
+  border-radius: 8px;
+}
+
+.emp-home-page .text-wrapper-30 {
+  position: absolute;
+  top: -1px;
+  left: 10px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #48484a;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-31 {
+  position: absolute;
+  top: -1px;
+  left: 101px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #48484a;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .group-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: 170px;
+  background-color: #ffcb67;
+  border-radius: 8px;
+}
+
+.emp-home-page .text-wrapper-32 {
+  position: absolute;
+  top: -1px;
+  left: 188px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #48484a;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-33 {
+  top: 21px;
+  left: 188px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  font-size: 15px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-34 {
+  top: 21px;
+  left: 119px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  font-size: 15px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-home-page .text-wrapper-35 {
+  top: 21px;
+  left: 38px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  font-size: 15px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a,
+            span {
+              font-family: 'Inter', sans-serif;
+            }
+
+            .frame-3 {
+                transition: transform 0.3s ease; /* Add a transition effect for the transform property */
+              }
+              
+              .frame-3:hover {
+                transform: scale(1.1); /* Apply a scale transformation on hover */
+              }
+
+              /* CSS for the dropdown */
+              body {
+                font-family: "Lato", sans-serif;
+              }
+              
+              .sidepanel  {
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #b8bdeb;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+              }
+              
+              .sidepanel a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+              }
+              
+              .sidepanel a:hover {
+                color: #f1f1f1;
+              }
+              
+              .sidepanel .closebtn {
+                position: absolute;
+                top: 0;
+                color:black;
+                right: 25px;
+                font-size: 36px;
+              }
+              
+              .openbtn {
+                font-size: 20px;
+                cursor: pointer;
+                background-color: #a3acf8;
+                color: black;
+                padding: 10px 15px;
+                border: none;
+                position:relative;
+                top:20px; 
+              }
+              body{
+                overflow-x: hidden;
+              }
+
+
+            .profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile {
+            width: 100px; /* Set your desired width */
+            height: 100px; /* Set your desired height */
+            border-radius: 50%;
+
+        }
+
+        #fileInput {
+            display: none;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        z-index: 1;
+        width:150px;
+        top:7px;
+    }
+
+    .dropdown-content p {
+        margin: 0;
+    }
+
+    .dropdown-content button {
+        margin-top: 10px;
+    }
+
+    .show {
+        display: block;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --calendar-bg-color: #262829;
+    --calendar-font-color: #FFF;
+    --weekdays-border-bottom-color: #404040;
+    --calendar-date-hover-color: #505050;
+    --calendar-current-date-color: #1b1f21;
+    --calendar-today-color: linear-gradient(to bottom, #03a9f4, #2196f3);
+    --calendar-today-innerborder-color: transparent;
+    --calendar-nextprev-bg-color: transparent;
+    --next-prev-arrow-color : #FFF;
+    --calendar-border-radius: 16px;
+    --calendar-prevnext-date-color: #484848
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    max-width: 400px; /*change as per your design need */
+    min-width: 320px;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    border-radius: var(--calendar-border-radius);
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px 0px;
+    background: var(--calendar-current-date-color);
+    padding: 8px 0px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+  border: 1px solid transparent;
+  pointer-events: none;
+}
+
+hr {
+width: 235%;
+height: 0px;
+background-color: red;
+margin-right: auto;
+margin-left: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+border-width: 2px;
+border-color: #a3acf8;
+position:relative;
+left:-126%;
+top:24px;
+}
+.footer {
+  position: absolute;
+  width: 1356px;
+  height: 96px;
+  top:110%;
+  left: -127%;
+  background: linear-gradient(to bottom, #dcdffa, #a3acf8);
+}
+
+.img-1 img{
+  max-width:100%;
+  width:125px;
+  height:122px;
+  top:-12px;
+  position: relative;
+  z-index:2;
+  left:200px;
+}
+
+.notification {
+    position: absolute;
+    top:5px;
+    right: 26px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+/* spinner */
+
+.loading-spinner {
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+

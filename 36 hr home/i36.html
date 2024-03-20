@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="g36.css" />
+    <link rel="stylesheet" href="s36.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+  </head>
+  
+  <body>
+    <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a,
+            span {
+              font-family: 'Inter', sans-serif;
+            }
+
+            .frame-3 {
+                transition: transform 0.3s ease; /* Add a transition effect for the transform property */
+              }
+              
+              .frame-3:hover {
+                transform: scale(1.1); /* Apply a scale transformation on hover */
+              }
+
+              /* CSS for the dropdown */
+              body {
+                font-family: "Lato", sans-serif;
+              }
+              
+              .sidepanel  {
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+              }
+              
+              .sidepanel a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+              }
+              
+              .sidepanel a:hover {
+                color: #f1f1f1;
+              }
+              
+              .sidepanel .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+              }
+              
+              .openbtn {
+                font-size: 20px;
+                cursor: pointer;
+                background-color: #a3acf8;
+                color: black;
+                padding: 10px 15px;
+                border: none;
+                position:relative;
+                top:20px; 
+              }
+              body{
+                overflow-x: hidden;
+              }
+
+
+          
+    </style>
+    <div class="emp-home-page">
+      <div class="menu-wrapper">
+        <div class="menu">
+          <div class="frame">
+            <!-- <img class="vector" style="cursor:pointer;" src="https://c.animaapp.com/lYNsExDT/img/vector.svg" /> -->
+
+            <div id="mySidepanel" class="sidepanel">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+              <a href="../37 hr view/i37.php">
+                <i class="fas fa-user"></i> View Profile
+            </a>
+            <div style="margin-top: 12px;"></div>
+
+            <a href="../38 hr attendance/i38markatt.html">
+              <i class="fas fa-calendar-alt"></i> Mark Attendance
+          </a>
+          <div style="margin-top: 12px;"></div>
+
+              <a href="../39 hr view att/i39.html">
+                  <i class="fas fa-clipboard-list"></i> View Attendance
+              </a>
+              <div style="margin-top: 12px;"></div>
+
+              <a href="../52 add user/i52.html">
+                  <i class="fas fa-user-plus"></i> Add User
+              </a>
+              <div style="margin-top: 12px;"></div>
+
+              <div class="dropdown-submenu">
+                <a href="javascript:void(0)" class="leaveDropdownToggle">
+                    <i class="far fa-calendar-check"></i> Status &#9660;
+                </a>
+                        <div class="submenu-content leaveDropdownContent">
+
+                        <a href="../40 hr leave approve/i40.php" style="position: relative; font-size: 18px;">Leave
+                        </a>
+
+                        <a href="../41 hr od approve/i41.php" style="position: relative; font-size: 18px;">OD 
+                        </a>
+
+                        <a href="../42 hr payslip approve/i42.php" style="position: relative;font-size: 18px;">Pay Slip</a>
+                        <a href="../49 hr permission/i49.php"style="position: relative;font-size: 18px;">Permission</a>
+                        <a href="../43 hr overtime approve/i43.php"style="position: relative;font-size: 18px;">Over Time</a>
+                      </div>
+                    </div>
+                    <div style="margin-top: 12px;"></div>
+                    
+
+
+              <a href="../47 hr product/i47.html">
+                <i class="fas fa-box"></i> Product
+              </a>
+              <div style="margin-top: 12px;"></div>
+
+              <a href="../50 hr feed/i50.html">
+                <i class="fas fa-edit"></i> Feeds
+            </a>
+            <div style="margin-top: 12px;"></div>
+
+              <a href="../44 hr sett/i44.html" style="position: relative;left: -1px">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+              <div style="margin-top: 12px;"></div>
+
+              <a href="../46 hr help/i46.html" style="position: relative;left: -1px">
+                  <i class="fas fa-question-circle"></i> Help
+              </a>
+              <div style="margin-top: 20px;"></div>
+              
+
+            </div>
+            <button class="openbtn" onclick="openNav()">☰</button> 
+          
+            <img class="profile" src="https://c.animaapp.com/lYNsExDT/img/profile-1@2x.png" />
+            <div class="div" style="cursor:pointer;">
+              <div class="text-wrapper">Hi, Ram</div>
+              
+              <img class="img" src="https://c.animaapp.com/lYNsExDT/img/vector-1.svg" />
+            </div>
+          </div>
+          <div class="frame-2">
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <div class="text-wrapper-2">Total Employees</div>
+                <div class="text-wrapper-3">100</div>
+                <div class="div-wrapper"><div class="text-wrapper-4" style="cursor:pointer;">More info</div></div>
+              </div>
+            </div>
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <div class="text-wrapper-5">Total Project</div>
+                <div class="div-wrapper"><div class="text-wrapper-4" style="cursor:pointer;">More info</div></div>
+                <div class="frame-4">
+                  <div class="frame-5">
+                    <div class="text-wrapper-6">Active</div>
+                    <div class="ellipse"></div>
+                  </div>
+                  <div class="text-wrapper-7">10</div>
+                  <div class="frame-6">
+                    <div class="ellipse-2"></div>
+                    <div class="text-wrapper-6">Completed</div>
+                  </div>
+                  <div class="text-wrapper-8">20</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <div class="text-wrapper-9">Total Revenue</div>
+                <div class="div-wrapper"><div class="text-wrapper-4" style="cursor:pointer;">More info</div></div>
+                <div class="frame-7">
+                  <div class="frame-8">
+                    <div class="text-wrapper-10">10,00,00</div>
+                    <img class="rupee" src="https://c.animaapp.com/lYNsExDT/img/rupee-1@2x.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <div class="text-wrapper-2">Total Employees</div>
+                <div class="text-wrapper-11">100</div>
+                <div class="div-wrapper"><div class="text-wrapper-4" style="cursor:pointer;">More info</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-wrapper-12">Dashboard</div>
+          <div class="frame-9">
+            <div class="group">
+              <div class="overlap">
+                
+                <div class="text-wrapper-28">Department</div>
+                <canvas id="myChartbar" style="width:100%;max-width:600px;position:relative;top:58px;"></canvas>
+              </div>
+            </div>
+            <div class="overlap-wrapper">
+              <div class="overlap-2">
+                <div class="overlap-group-wrapper">
+                  
+                    
+                  <div class="overlap-group-2"><div class="text-wrapper-29">Attendance</div>
+                  <canvas id="myChart" style="width: 100%;max-width: 600px;display: block;position: relative;top: 68px;"></canvas>
+                </div>
+                  
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      var leaveDropdownToggle = document.querySelector(".leaveDropdownToggle");
+      var leaveDropdownContent = document.querySelector(".leaveDropdownContent");
+      leaveDropdownToggle.addEventListener("click", function(event){
+          event.stopPropagation();
+          if (leaveDropdownContent.style.display === "block") {
+              leaveDropdownContent.style.display = "none";
+          } else {
+              leaveDropdownContent.style.display = "block";
+          }
+      });
+      document.addEventListener("click", function(event) {
+          if (event.target !== leaveDropdownToggle && event.target !== leaveDropdownContent) {
+              leaveDropdownContent.style.display = "none";
+          }
+      });
+      </script>
+    
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const xValues = ["Present", "Absent", "Late"];
+        const yValues = [28, 1, 2];
+        const barColors = ["#30BEB6", "#FF7F74", "#FFCB67"];
+
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: 0,
+              borderColor: 'transparent'
+            }]
+          },
+          options: {
+            legend: {
+              labels: {
+                fontColor: 'black',
+                fontSize: 14,
+                fontStyle: 'bold',
+              }
+            },
+            title: {
+              display: true
+            }
+          }
+        });
+
+        const xValuess = ["Web Developer", "UI/UX", "Backend", "Software Testing"];
+        const yValuess = [10, 20, 40, 60, 80, 100, 120];
+        const barColorss = ["green", "blue", "lightblue", "orange"];
+
+        new Chart("myChartbar", {
+          type: "bar",
+          data: {
+            labels: xValuess,
+            datasets: [{
+              backgroundColor: barColorss,
+              data: yValuess
+            }]
+          },
+          options: {
+            legend: {
+              display: false
+            },
+            title: {
+              display: true
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

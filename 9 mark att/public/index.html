@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Mark Attendance</h1>
+        <button id="markAttendanceButton">Mark Attendance</button>
+        <div id="locationStatus"></div>
+        <div id="selfieContainer" style="display: none;">
+            <video id="selfieVideo" autoplay></video>
+            <button id="captureButton">Capture Selfie</button>
+            <canvas id="selfieCanvas"></canvas>
+            <img id="selfieImage" style="display: none;" />
+            <button id="submitButton" style="display: none;">Submit Attendance</button>
+            <button id="goBackButton" style="display: none;">Go Back</button>
+        </div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>

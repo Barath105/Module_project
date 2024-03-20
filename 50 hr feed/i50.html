@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-color: #a3acf8;
+            color: black;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f7ce68;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dcdffa;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        
+        button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color:#4CAF50;
+        }
+        .feed-box {
+            width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        </style>
+</head>
+<body>
+
+
+    <header style="position: relative;height: 28px;top: -8px;width: 1366px;left: -8px;">
+        <nav>
+            <div class="logo" style="position: relative;top: -9px;left: 8px">
+                <i class="fas fa-home"></i> Feeds
+            </div>
+            <ul>
+                <li><a href="../36 hr home/i36.php" style="position: relative;top: -9px;left:16px;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <form action="post.php" method="post" enctype="multipart/form-data">
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            <input type="file" id="file" name="file">
+            <button onclick="submitForm()">Post</button>
+        </form>
+    </div>
+<script>
+    document.getElementById('postForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the form data
+        var formData = new FormData(this);
+
+        // You can now send formData to the server using AJAX or any other method
+        console.log('Form Data:', formData);
+
+        // Reset the form
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

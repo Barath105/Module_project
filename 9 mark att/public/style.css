@@ -1,0 +1,56 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#app {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#locationStatus {
+    margin-top: 20px;
+}
+
+#selfieContainer {
+    margin-top: 20px;
+}
+
+#selfieVideo {
+    width: 100%;
+}
+
+#selfieCanvas {
+    display: none;
+    width: 100%;
+}
+
+#selfieImage {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#submitButton, #goBackButton {
+    margin-top: 20px;
+}

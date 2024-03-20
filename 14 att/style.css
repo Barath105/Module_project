@@ -1,0 +1,43 @@
+.calendar {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 5px 0;
+}
+
+.day {
+    width: 30px;
+    font-weight: bold;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    gap: 5px;
+}
+
+.date {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.absent {
+    background-color: red;
+    color: white;
+}

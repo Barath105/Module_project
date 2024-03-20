@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="g4.css" />
+    <link rel="stylesheet" href="s4.css" />
+    <style>
+        /* CSS for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="emp-home-page">
+        <div class="overlap-wrapper">
+            <div class="overlap">
+                <div class="menu">
+                    <div class="pie-chart">
+                        <div class="overlap-group">
+                            <img class="element" src="https://c.animaapp.com/Zb6DgBYB/img/3.svg" />
+                            <img class="img" src="https://c.animaapp.com/Zb6DgBYB/img/2.svg" />
+                        </div>
+                    </div>
+                    <div class="frame">
+                        <div class="text-wrapper">Role</div>
+                        <div class="div">Frontend developer</div>
+                        <div class="text-wrapper-2">Organization</div>
+                        <div class="text-wrapper-3">ABC Soft Tech</div>
+                    </div>
+                    <div class="frame-2">
+                        <div class="group"></div>
+                        <div class="group-2"></div>
+                        <div class="text-wrapper-4">Present</div>
+                        <div class="text-wrapper-5">Absent</div>
+                        <div class="group-3"></div>
+                        <div class="text-wrapper-6">Late</div>
+                    </div>
+                    <div class="overlap-2">
+                        <div class="overlap-group-wrapper">
+                            <div class="overlap-3">
+                                <div class="frame-wrapper">
+                                    <div class="frame-3">
+                                        <div class="text-wrapper-7">28</div>
+                                        <div class="text-wrapper-8">3</div>
+                                        <div class="text-wrapper-9">2</div>
+                                    </div>
+                                </div>
+                                <img class="line" src="https://c.animaapp.com/Zb6DgBYB/img/line-2.svg" />
+                            </div>
+                        </div>
+                        <img class="line-2" src="https://c.animaapp.com/Zb6DgBYB/img/line-2.svg" />
+                    </div>
+                    <img class="line-3" src="https://c.animaapp.com/Zb6DgBYB/img/line-3.svg" />
+                    <div class="div-wrapper">
+                        <div class="overlap-4"><div class="text-wrapper-10">Feeds</div></div>
+                    </div>
+                </div>
+                <div class="frame-4">
+                    <div class="frame-5">
+                        <div class="frame-6">
+                            <!-- Dropdown menu -->
+                            <!-- <div class="dropdown"> -->
+                                <img class="profile" src="https://c.animaapp.com/Zb6DgBYB/img/profile-1@2x.png" />
+                                <div class="frame-7">
+                                    <div class="frame-8"><div class="text-wrapper-11">Username</div></div>
+                                </div>
+                                <div class="frame-9">
+                                    <div class="frame-10"><div class="text-wrapper-12">User ID</div></div>
+                                </div>
+                                <img class="vector" src="https://c.animaapp.com/Zb6DgBYB/img/vector.svg" />
+                                <div class="dropdown-content">
+                                    <a href="../7 emp view/i7.php">View Profile</a>
+                                    <a href="../9 mark att/code/i9.html">Mark Attendance</a>
+                                    <a href="../14 att/cal.html">View Attendance</a>
+                                    <a href="#">Leave</a>
+                                    <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                          <a href="../15 leave/i15.html">Apply Leave</a>
+                                          <a href="#">Apply OD</a>
+                                          <a href="#">Leave Balance</a>
+                                          <a href="#">Holiday Calendar</a>
+                                        </div>
+                                      </div>
+                                    <a href="../16 payslip/i16.html">Pay Slip</a>
+                                    <a href="#">Over Time</a>
+                                    <a href="../18 permission/i18.html">Permission</a>
+                                    <a href="../13 sett/i13.html">Settings</a>
+                                    <a href="#">Help</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get the vector image element and the dropdown content element
+        var vectorImage = document.querySelector(".vector");
+        var dropdownContent = document.querySelector(".dropdown-content");
+    
+        // Function to toggle the dropdown content
+        function toggleDropdown() {
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    
+        // Add a click event listener to the vector image
+        vectorImage.addEventListener("click", function(event) {
+            toggleDropdown();
+            event.stopPropagation(); // Prevent the click event from propagating further
+        });
+    
+        // Add a click event listener to the document to close the dropdown when clicking outside
+        document.addEventListener("click", function(event) {
+            if (event.target !== vectorImage && !dropdownContent.contains(event.target)) {
+                dropdownContent.style.display = "none";
+            }
+        });
+    </script>
+    
+    
+
+
+</body>
+</html>

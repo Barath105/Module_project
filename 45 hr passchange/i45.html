@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    
+    <link rel="stylesheet" type="text/css" href="s45.css">
+</head>
+<body>
+    <style>
+        header {
+            background-color: #a3acf8;
+            color: black;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f7ce68;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .apply-form {
+            animation: fadeIn 1s ease;
+        }
+    </style>
+    <div class="container">
+        <header style="position: relative;top: -48px;width: 1440px;">
+            <nav style="position: relative;width: 1200px">
+                <div class="logo"style="position: relative;top: 0;left: 8px">
+                    <i class="fas fa-home"></i> Password Change</div>
+                <ul>
+                    <li><a href="../36 hr home/i36.php"style="position: relative;left: 136px;top:0">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+                Change Password
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+            
+            <form action="passchange.php" method="POST">
+                <div class="field">
+                    <input type="text" name="cpassword" id="cpassword" placeholder="Current Password" required>
+                </div>
+                <div class="field">
+                    <input type="password" name="npassword" id="npassword" placeholder="New Password" required>
+                    <span class="password-toggle-icon" onclick="togglePassword('newPassword')" style="position: relative;top: -38px;left: 300px">
+                    <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+
+
+                <div class="field">
+                    <input type="password" name="rpassword" id="rpassword" placeholder="Confirm Password" required>
+                    <span class="password-toggle-icon" onclick="togglePassword('reenterPassword')" style="position: relative;top: -38px;left: 300px">
+                    <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Change">
+                </div>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+        </form>
+        
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+    
+            // Form data
+            var nameInput = document.getElementById("name");
+            var empIdInput = document.getElementById("employeeId");
+            var dateInput = document.getElementById("date");
+    
+            var name = nameInput.value;
+            var empId = empIdInput.value;
+            var date = dateInput.value;
+    
+            // Validation for the name, employeeId, and date fields
+            if (!name || !employeeId || !cpassword || !npassword || !rpassword) {
+                showErrorMsg("Please fill in all fields.");
+                return false;
+            }
+    
+            // Submit form (Replace with your own code for form submission)
+            // Here, we are just showing a success message
+            showSuccessMsg("Password change successfully");
+    
+            return true;
+        }
+    
+        function showSuccessMsg(message) {
+            var successMsg = document.getElementById("successMsg");
+            successMsg.style.display = "block";
+            successMsg.textContent = message;
+    
+            var errorMsg = document.getElementById("errorMsg");
+            errorMsg.style.display = "none";
+        }
+    
+        function showErrorMsg(message) {
+            var successMsg = document.getElementById("successMsg");
+            successMsg.style.display = "none";
+    
+            var errorMsg = document.getElementById("errorMsg");
+            errorMsg.style.display = "block";
+            errorMsg.textContent = message;
+        }
+    
+    </script>

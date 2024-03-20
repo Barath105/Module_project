@@ -1,0 +1,175 @@
+.emp-p-view {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.emp-p-view .overlap-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1024px;
+}
+
+.emp-p-view .overlap {
+  position: relative;
+  height: 1024px;
+}
+
+.emp-p-view .frame {
+  position: absolute;
+  width: 1440px;
+  height: 956px;
+  top: 68px;
+  left: 0;
+  background-color: #eaecfd;
+}
+
+.emp-p-view .frame-wrapper {
+  position: relative;
+  width: 706px;
+  height: 489px;
+  top: 68px;
+  left: 367px;
+  background-color: #eaecfd;
+  border-radius: 80px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+}
+
+.emp-p-view .div {
+  position: relative;
+  width: 371px;
+  height: 301px;
+  top: 94px;
+  left: 168px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.emp-p-view .calendar {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 17px;
+  left: 8px;
+  object-fit: cover;
+}
+
+.emp-p-view .div-wrapper {
+  position: absolute;
+  width: 192px;
+  height: 40px;
+  top: 15px;
+  left: 61px;
+}
+
+.emp-p-view .text-wrapper {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #699bf7;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-p-view .text-wrapper-2 {
+  position: absolute;
+  top: 84px;
+  left: 8px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-p-view .overlap-group-wrapper {
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  top: 118px;
+  left: 8px;
+}
+
+.emp-p-view .overlap-group {
+  position: relative;
+  width: 197px;
+  height: 30px;
+}
+
+.emp-p-view .photo {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.emp-p-view .text-wrapper-3 {
+  position: absolute;
+  top: 9px;
+  left: 28px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.emp-p-view .frame-2 {
+  position: absolute;
+  width: 180px;
+  height: 54px;
+  top: 203px;
+  left: 96px;
+  background-color: #8af4ee;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.emp-p-view .text-wrapper-4 {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.emp-p-view .frame-3 {
+  position: absolute;
+  width: 1440px;
+  height: 77px;
+  top: 0;
+  left: 0;
+  background-color: #b1fbf7;
+}
+
+.emp-p-view .text-wrapper-5 {
+  position: absolute;
+  width: 169px;
+  top: 19px;
+  left: 586px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}

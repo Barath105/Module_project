@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <link rel="stylesheet" href="approve.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="s47.css">
+</head>
+<body>
+    <style>
+        header {
+            background: linear-gradient(45deg, #a3acf8, #c9cef5);
+            color: black;
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f7ce68;
+        }
+        img {
+            max-width: 100%;
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: -10px;
+            left: 40px;
+        }
+        .logo-1 {
+    position: relative;
+    
+}
+
+.logo-1 img {
+    position: absolute; 
+    top: 0; 
+    left: 28%; 
+    max-width: 100%; 
+    width:600px;
+    height: auto;
+    opacity: 0.2;
+    
+}   
+        info-message {
+            font-size: 12px;
+        }
+    
+        .info-message {
+            font-size: 12px;
+        }
+    
+        textarea:hover + .info-message {
+            display: block;
+        }
+
+        .employee-item {
+            display: inline-block;
+            background-color: #ddd;
+            padding: 5px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+
+        .employee-item .cancel-icon {
+            margin-left: 5px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .product_id {
+            font-weight: bold;
+        }
+
+
+        .tags-input { 
+            display: inline-block; 
+            position: relative; 
+            width: 100%; 
+            position: relative;
+            top: 29px;
+            outline: none;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            height: 100px;
+            overflow-y: auto; /* Add this property to enable vertical scrolling */
+        }
+        
+        .tags-input ul { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+        
+        .tags-input li { 
+            display: inline-block; 
+            background-color: #f2f2f2; 
+            color: #333; 
+            padding: 5px 10px; 
+            margin-right: 5px; 
+            margin-bottom: 20px; /* Adjusted to 20px for vertical gap */
+            height: 30px;
+            margin-left: 200px;
+        }
+        
+        
+        .tags-input input[type="text"] { 
+            border: none; 
+            outline: none; 
+            padding: 5px; 
+            font-size: 14px; 
+            position:relative;
+            top:2px;
+        }
+        
+        .tags-input input[type="text"]:focus { 
+            outline: none; 
+        }
+        
+        .tags-input .delete-button { 
+            background-color: white;
+            border: none; 
+            color: #333; 
+            cursor: pointer; 
+            margin-left: 68px; 
+            z-index: 2; /* Add a higher z-index */
+        }
+        
+        /* Add a max-height to the tags list to trigger scrolling */
+        .tags-input ul {
+            max-height: 0px; /* Adjust the value according to your design */
+        }
+        
+        
+    </style>
+
+
+    
+    <header style="position: relative;top:0%;width: 100%;left: 0%;height: 75px;">
+        <nav style="position: relative;width: 1200px">
+            <div class="logo"style="position: relative;top: 2px;left:122px">
+                <i class=""></i> Project</div>
+            <ul>
+                <li><a href="../36 hr home/i36.php"style="position: relative;left: 136px;top:0px">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="EMP.png">
+        
+
+
+    <div class="logo-1">
+    <img src="logo.png">
+    </div>
+    
+        <!-- <div class="container" style="position: relative; top: 20px;"> -->
+            <section class="container">
+            
+                <form action="addproduct.php" method="post" class="form">
+                    <h4>Client Details</h4>
+                <div class="column">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name" required />
+                </div>
+        
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="text" name="mail" id="mail" placeholder="Enter email" required />
+                </div>
+            </div>
+        
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input name="gender" value="Male" type="radio" checked />
+                            <label for="check-male">male</label>
+                        </div>
+                        <div class="gender">
+                            <input name="gender" value="Female" type="radio" id="check-female" />
+                            <label  for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input name="gender" value="Prefer not to say" type="radio" id="check-other"/>
+                            <label for="check-other">prefer not to say</label>
+                        </div>
+                    </div>
+                    </div>
+        
+                <div class="column">
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="number" name="number" id="number" placeholder="Enter mobile number" required />
+                    </div>
+                    <div class="input-box">
+                        <label>Birth Date</label>
+                        <input type="date" name="dob" id="dob" placeholder="Enter birth date" required />
+                    </div>
+                </div>
+
+                <div class="column"> 
+                    <div class="input-box">
+                        <label>Address</label>
+                        <input type="text" name="address" id="address" placeholder="Enter address" required />
+                        </div>
+                    </div>
+        
+                    <h5>Project Details</h5>
+
+
+                    <div class="column">
+                    
+                    <div class="input-box">
+                        <label>Project Name</label>
+                        <input type="text" name="projectName" id="projectName" placeholder="Enter project name" required />
+                        </div>
+            
+                    <div class="input-box">
+                        <label>Project ID</label>
+                    <input type="number" name="projectId" id="projectId" placeholder="Enter ID" required />
+                    </div>
+
+                    <div class="input-box">
+                        <label>Project Descripton</label>
+                        <input type="text" name="description" placeholder="description" required />
+                        </div>
+            
+                    </div>
+                    
+                        
+                
+
+                        <div class="column">
+                            
+                        <div class="input-box">
+                            <label>Total Cost</label>
+                        <input type="number" name="totalCost" id="totalCost" placeholder="Enter total cost"  required />
+                        </div>
+                    
+                            <div class="input-box">
+                                <label>Advance Paid</label>
+                                <input type="number" name="advancePaid" id="advancePaid" placeholder="Enter advance amount" required />
+                                </div>
+                    
+                            <div class="input-box">
+                                <label>Remaining Amount</label>
+                            <input type="number" name="remamount" id="remamount" placeholder="Remaining amount" required readonly />
+                            </div>
+                    
+                            </div>
+
+
+
+                            <div class="column">
+                    
+                                <div class="input-box">
+                                    <label>Start Date</label>
+                                    <input type="date" name="startDate" id="startDate" required />
+                                    </div>
+                        
+                                <div class="input-box">
+                                    <label>Due Date</label>
+                                <input type="date" name="dueDate" id="dueDate" required />
+                                </div>
+                        
+                                </div>
+
+                                <div class="input-field">
+                                    <label style="position:relative;top:20px;">Assign Project</label>
+                                    <div class="tags-input">
+                                        <ul id="tags"></ul>
+                                        <input type="text" id="input-tag" placeholder="Enter user's Id" />
+                                        <p class="error-message" id="validation-message"></p>
+                                    </div>
+                                </div>
+
+                    <button style="height:40px;top:68px;">Add</button>
+                </form>
+            </section>
+            <script>
+                const tags = document.getElementById('tags');
+                const input = document.getElementById('input-tag');
+            
+                let count = 0;
+            
+                input.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        const userId = input.value.trim();
+                        const projectId = document.getElementById('projectId').value.trim(); // Retrieve project ID from the input
+            
+                        if (userId !== '') {
+                            validateUserId(userId, projectId); // Pass both user ID and project ID to the validation function
+                        }
+                    }
+                });
+            
+                function validateUserId(userId, projectId) {
+                    const xhr = new XMLHttpRequest();
+            
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === XMLHttpRequest.DONE) {
+                            if (xhr.status === 200) {
+                                const response = JSON.parse(xhr.responseText);
+                                if (response.valid) {
+                                    addTag(userId, projectId);
+                                } else {
+                                    showError('Invalid user ID');
+                                }
+                            } else {
+                                showError('Error validating user ID');
+                            }
+                        }
+                    };
+            
+                    xhr.open('GET', `validate_user.php?userid=${userId}`, true);
+                    xhr.send();
+                }
+            
+                function addTag(userId, projectId) {
+                    const existingTags = Array.from(tags.getElementsByTagName('li'));
+                    const isUserIdAlreadyExists = existingTags.some(tag => tag.innerText === userId);
+            
+                    if (!isUserIdAlreadyExists) {
+                        const tag = document.createElement('li');
+                        tag.innerText = userId;
+            
+                        const deleteButton = document.createElement('button');
+                        deleteButton.className = 'delete-button';
+                        deleteButton.textContent = 'X';
+                        deleteButton.addEventListener('click', function () {
+                            tag.remove();
+                            count = Math.max(0, count - 1);
+                            updateCount();
+                        });
+            
+                        tag.appendChild(deleteButton);
+                        tags.appendChild(tag);
+            
+                        input.value = '';
+                        count++;
+                        updateCount();
+                        
+                        // Send the user ID and project ID to the server for storage
+                        storeTaskId(userId, projectId);
+                    } else {
+                        showError('User ID already exists');
+                    }
+                }
+            
+                function updateCount() {
+                    document.getElementById('validation-message').textContent = `Number of IDs: ${count}`;
+                }
+            
+                function showError(message) {
+                    document.getElementById('validation-message').textContent = message;
+                }
+            
+                function storeTaskId(userId, projectId) {
+                    const xhr = new XMLHttpRequest();
+            
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === XMLHttpRequest.DONE) {
+                            if (xhr.status === 200) {
+                                console.log(xhr.responseText);
+                            } else {
+                                console.error('Error storing task ID');
+                            }
+                        }
+                    };
+            
+                    xhr.open('GET', `assign_task.php?userid=${userId}&projectId=${projectId}`, true); // Use projectId instead of taskId
+                    xhr.send();
+                }
+</script>
+
+
+<script>
+    // Get the input elements
+    var totalCostInput = document.getElementById('totalCost');
+    var advancePaidInput = document.getElementById('advancePaid');
+    var remainingAmountInput = document.getElementById('remamount');
+
+    // Add event listeners to total cost and advance paid inputs
+    totalCostInput.addEventListener('input', updateRemainingAmount);
+    advancePaidInput.addEventListener('input', updateRemainingAmount);
+
+    // Function to calculate and update the remaining amount
+    function updateRemainingAmount() {
+        var totalCost = parseFloat(totalCostInput.value) || 0;
+        var advancePaid = parseFloat(advancePaidInput.value) || 0;
+
+        var remainingAmount = totalCost - advancePaid;
+
+        // Update the remaining amount input field
+        remainingAmountInput.value = remainingAmount.toFixed(2);
+    }
+</script>
+
+</body>
+</html>
